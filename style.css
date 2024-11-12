@@ -161,4 +161,6 @@ h1 {
 .foto-link img {
     width: 42px;
     height: 42px;
+    bottom: 10px;
+    left: 10px;
 }
