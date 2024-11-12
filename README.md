@@ -1,2 +1,2 @@
 # Leons-Website
-littraly just my website
+meine website für ein schulprojekt
