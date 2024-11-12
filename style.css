@@ -151,3 +151,14 @@ h1 {
 .back-button:hover {
     background-color: rgba(35, 35, 35, 0.074);
 }
+
+.foto-link {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+}
+
+.foto-link img {
+    width: 42px;
+    height: 42px;
+}
