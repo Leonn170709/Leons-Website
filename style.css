@@ -155,6 +155,7 @@ h1 {
 a {
     color: #555;
     font-size: 1em;
+    position: fixed;
     margin: 5px 0;
     bottom: 10px;
     left: 10px;
