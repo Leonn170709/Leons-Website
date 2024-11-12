@@ -4,15 +4,38 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Credits</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="credits.css">
+    
+    <link rel="icon" type="image/x-icon" href="Bilder/Leon.ico">
 </head>
 <body>
     <div class="credits">
         <div class="credit-item">
-            <img src="UrlEinsetzen" alt="Profilbild" class="profile-pic">
-            <h2>Dein Name</h2>
-            <p>Developer / Hoster</p>
+            <img src="Bilder/Leon.jpg" alt="Profilbild" class="profile-pic">
+            <h2>Leon</h2>
+            <p>Developer/Hoster</p>
+        </div>
+        <!-- ChatGPT Entry -->
+        <div class="credit-item">
+            <img src="Bilder/ChatGPT-Logo.png" alt="ChatGPT Logo" class="profile-pic">
+            <h2>ChatGPT</h2>
+            <p>Programmierunterstützung</p>
         </div>
     </div>
+    
+    <!-- Schwarze Leiste -->
+    <div class="top-bar">Leons Website</div>
+    <!-- Zurück-Button -->
+    <button class="back-button" onclick="removeAnimationFromUrl()">Zurück</button>
+    <script>
+       //Zurück-Button
+       function removeAnimationFromUrl() {
+            const currentUrl = window.location.href;
+            const newUrl = currentUrl.replace("/credits.html", "");
+            window.location.href = newUrl;
+        }
+    </script>
+
 </body>
 </html>

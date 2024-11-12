@@ -5,11 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Leons Website</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="clock.css">
+    <link rel="icon" type="image/x-icon" href="Bilder/Leon.ico">
 </head>
 <body>
     
     <!-- Schwarze Leiste -->
     <div class="top-bar">Leons Website</div>
+    
 
     <!-- Digitale Uhr -->
     <div id="clock">00:00:00</div>
@@ -51,6 +54,7 @@
         }
         setInterval(updateClock, 1000);
         updateClock();
+
 
         // Zitate
         const quotes = [
@@ -133,7 +137,7 @@
         }
        function addAnimationToUrl() {
             const currentUrl = window.location.origin;
-            const newUrl = currentUrl + '/animation.html';
+            const newUrl = currentUrl + '/pong.html';
             window.location.href = newUrl;
         }
         function addhilfe() {
