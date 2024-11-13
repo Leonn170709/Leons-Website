@@ -49,7 +49,7 @@
         function createBlocks() {
             blocks.forEach(block => block.remove());
             blocks = [];
-            for (let i = 0; i < 200; i++) {
+            for (let i = 0; i < 8; i++) {
                 let block = document.createElement("div");
                 block.className = "block";
                 block.style.top = (i * 20 + 30) + "px";
@@ -88,7 +88,7 @@
             // Schlägerkollision
             if (ballY >= pongGame.offsetHeight - paddle.offsetHeight - ball.offsetHeight &&
                 ballX >= paddleX && ballX <= paddleX + paddle.offsetWidth) {
-                ballDY *= -1.5
+                ballDY *= -5
             }
 
             // Blockkollision
@@ -99,7 +99,7 @@
                     ballRect.bottom > blockRect.top &&
                     ballRect.left < blockRect.right &&
                     ballRect.right > blockRect.left) {
-                    ballDY *= -1.5;
+                    ballDY *= -1.04;
                     block.remove();
                     blocks.splice(index, 1);
                     score++;
