@@ -114,13 +114,9 @@ button {
 #casaosBtn { right: 20px; }
 #animationBtn {
     position:fixed;
-    left: 20px;
-    top:20px;
-    background-color: rgba(255, 68, 0, 0);
-    color: white;
-    cursor: pointer;
-    z-index: 11;
-    
+    left: 10px;
+    top:10px;
+    z-index: 11;  
 }
 
 p {
