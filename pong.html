@@ -88,7 +88,7 @@
             // Schlägerkollision
             if (ballY >= pongGame.offsetHeight - paddle.offsetHeight - ball.offsetHeight &&
                 ballX >= paddleX && ballX <= paddleX + paddle.offsetWidth) {
-                ballDY *= -5
+                ballDY *= -0.9
             }
 
             // Blockkollision
@@ -99,7 +99,7 @@
                     ballRect.bottom > blockRect.top &&
                     ballRect.left < blockRect.right &&
                     ballRect.right > blockRect.left) {
-                    ballDY *= -1.04;
+                    ballDY *= -1.1;
                     block.remove();
                     blocks.splice(index, 1);
                     score++;
