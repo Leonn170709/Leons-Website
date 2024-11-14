@@ -113,10 +113,20 @@ button {
 #nextcloudBtn { left: 20px; }
 #casaosBtn { right: 20px; }
 #animationBtn {
-    position:fixed;
+    position: fixed;
+    top: 10px;
     left: 10px;
-    top:10px;
-    z-index: 11;  
+    padding: 8px 12px;
+    background-color: rgba(255, 68, 0, 0);
+    color: white;
+    font-size: 1em;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    z-index: 11;
+    transition: background-color 0.3s ease;
+    margin: auto;
 }
 
 p {
