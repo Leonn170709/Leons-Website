@@ -12,11 +12,9 @@
 <body>
     <!-- Schwarze Leiste oben -->
     <div class="top-bar">Leons Website</div>
-
-    <!-- Zurück-Button -->
+    <!-- back button -->
     <button class="back-button" onclick="removeAnimationFromUrl()">Zurück</button>
-
-    <!-- Punktestand -->
+    <!-- Score board -->
     <div class="score-board">
         <div>Score: <span id="score">0</span></div>
         <div>Highscore: <span id="highscore">0</span></div>
@@ -27,28 +25,25 @@
         <div id="paddle"></div>
         <div id="ball"></div>
     </div>
-
     <script>
-        //Zurück-Button
         function removeAnimationFromUrl() {
             const currentUrl = window.location.href;
             const newUrl = currentUrl.replace("/pong.html", "");
             window.location.href = newUrl;
         }
-
         const pongGame = document.getElementById("pongGame");
         const paddle = document.getElementById("paddle");
         const ball = document.getElementById("ball");
-
         let ballX = 200, ballY = 250, ballDX = 2, ballDY = -2;
         let paddleX = 160;
         let score = 0, highscore = 0;
        
-        // Blöcke hinzufügen
+        // Blöcke 
         let blocks = [];
         function createBlocks() {
             blocks.forEach(block => block.remove());
             blocks = [];
+            //anzahl der blöcke
             for (let i = 0; i < 8; i++) {
                 let block = document.createElement("div");
                 block.className = "block";
@@ -60,7 +55,6 @@
         }
 
         createBlocks();
-
         // Punkte anzeigen und aktualisieren
         function updateScore() {
             document.getElementById("score").innerText = score;
@@ -69,7 +63,6 @@
                 document.getElementById("highscore").innerText = highscore;
             }
         }
-
         // Paddle bewegen
         pongGame.addEventListener("mousemove", e => {
             paddleX = e.clientX - pongGame.offsetLeft - paddle.offsetWidth / 2;
